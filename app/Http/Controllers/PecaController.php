@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use App\Charts\PecaChart;
 use PDF;
 
 class PecaController extends Controller
@@ -22,7 +23,9 @@ class PecaController extends Controller
     {
         $objResult = Peca::paginate(5);
 
-        return view("peca.list")->with(['pecas'=>$objResult]);
+        $chart = new PecaChart();
+
+        return view("peca.list")->with(['pecas'=>$objResult, 'chartPeca' => $chart->build()]);
     }
 
     /**

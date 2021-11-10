@@ -8,7 +8,7 @@
 
 @section('content')
 
-<h4 style="margin: 20px 0">Lista de Funcionário</h4>
+<h4 style="margin: 20px 0">Listagem de Funcionários</h4>
 
 <!-- Buscar registro -->
 <form action="{{action('App\Http\Controllers\FuncionarioController@search')}}" method="post">

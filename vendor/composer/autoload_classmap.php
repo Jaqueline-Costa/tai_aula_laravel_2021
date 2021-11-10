@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Charts\\ClienteChart' => $baseDir . '/app/Charts/ClienteChart.php',
+    'App\\Charts\\PecaChart' => $baseDir . '/app/Charts/PecaChart.php',
     'App\\Console\\Commands\\ChartMakeCommand' => $baseDir . '/app/Console/Commands/ChartMakeCommand.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',

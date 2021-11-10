@@ -563,7 +563,7 @@ class ComposerStaticInitd94be90d4ad920b2eda0cad87b46cf92
     );
 
     public static $classMap = array (
-        'App\\Charts\\ClienteChart' => __DIR__ . '/../..' . '/app/Charts/ClienteChart.php',
+        'App\\Charts\\PecaChart' => __DIR__ . '/../..' . '/app/Charts/PecaChart.php',
         'App\\Console\\Commands\\ChartMakeCommand' => __DIR__ . '/../..' . '/app/Console/Commands/ChartMakeCommand.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',

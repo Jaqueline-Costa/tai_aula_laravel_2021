@@ -6,9 +6,18 @@
 @parent
 @endsection
 
+@section('grafico')
+<div class="row">
+    <div class="col-6">
+        {{ $chartPeca->container() }}
+        {{ $chartPeca->script() }}
+    </div>
+</div>
+@endsection
+
 @section('content')
 
-<h4 style="margin: 20px 0">Lista de Peça</h4>
+<h4 style="margin: 20px 0">Listagem de Peças</h4>
 
 <!-- Buscar registro -->
 <form action="{{action('App\Http\Controllers\PecaController@search')}}" method="post">

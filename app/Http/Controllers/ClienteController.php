@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Charts\ClienteChart;
 use App\Mail\SendMailCliente;
 use App\Models\Cliente;
-use App\Models\ClienteCategoria;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use PDF;
@@ -24,9 +21,7 @@ class ClienteController extends Controller
     {
         $objResult = Cliente::paginate(10);
 
-        $chart = new ClienteChart();
-
-        return view("cliente.list")->with(['clientes' => $objResult, 'chartCliente' => $chart->build()]);
+        return view("cliente.list")->with(['clientes' => $objResult]);
     }
 
     /**

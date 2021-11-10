@@ -6,18 +6,9 @@
 @parent
 @endsection
 
-@section('grafico')
-<div class="row">
-    <div class="col-6">
-        {{ $chartCliente->container() }}
-        {{ $chartCliente->script() }}
-    </div>
-</div>
-@endsection
-
 @section('content')
 
-<h4 style="margin: 20px 0">Lista de Cliente</h4>
+<h4 style="margin: 20px 0">Listagem de Cliente</h4>
 
 <!-- Buscar registro -->
 <form action="{{action('App\Http\Controllers\ClienteController@search')}}" method="post">
