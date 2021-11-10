@@ -63,7 +63,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/funcionario/destroy/{id}', "App\Http\Controllers\FuncionarioController@destroy");
     Route::post('/funcionario/search/', "App\Http\Controllers\FuncionarioController@search");
 
-    Route::get('/turma-relatorio', "App\Http\Controllers\TurmaController@gerarTurmaPDF");
     Route::get('/cliente-relatorio', "App\Http\Controllers\ClienteController@gerarClientePDF");
     Route::get('/peca-relatorio', "App\Http\Controllers\PecaController@gerarPecaPDF");
     Route::get('/funcionario-relatorio', "App\Http\Controllers\FuncionarioController@gerarFuncionarioPDF");
