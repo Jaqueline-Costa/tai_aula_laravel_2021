@@ -52,7 +52,7 @@ class PecaController extends Controller
 
         $input = $request->all();
         $imagem = $request->file('nome_arquivo');
-
+dd($imagem);
         if ($imagem) {
             $nome_arquivo = date('YmdHis') . "." . $imagem->getClientOriginalExtension();
 
