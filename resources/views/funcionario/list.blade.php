@@ -48,8 +48,8 @@
             <th scope="col">Telefone</th>
             <th scope="col">Salário</th>
             <th scope="col">Horário</th>
-            <th scope="col">Ação</th>
-            <th scope="col">Ação</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Excluir</th>
         </tr>
     </thead>
     <tbody>

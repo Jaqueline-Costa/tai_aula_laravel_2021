@@ -50,8 +50,8 @@
             <th scope="col">Email</th>
             <th scope="col">Data Início</th>
             <th scope="col">Data Final</th>
-            <th scope="col">Ação</th>
-            <th scope="col">Ação</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Excluir</th>
         </tr>
     </thead>
     <tbody>

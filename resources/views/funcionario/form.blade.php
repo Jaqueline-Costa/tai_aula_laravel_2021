@@ -35,7 +35,7 @@ $action = action('App\Http\Controllers\FuncionarioController@store');
 };
 @endphp
 
-<h4 style="margin: 20px 0 40px 0 ">Forlmulário de Funcionário</h4>
+<h4 style="margin: 20px 0 40px 0 ">Formulário de Funcionários</h4>
 
 <form action="{{$action}}" method="post">
     @csrf

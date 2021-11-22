@@ -26,7 +26,7 @@ $action = action('App\Http\Controllers\PecaController@store');
 };
 @endphp
 
-<h4 style="margin: 20px 0 40px 0 ">Forlmulário de Peça</h4>
+<h4 style="margin: 20px 0 40px 0 ">Formulário de Peças</h4>
 
 <form action="{{$action}}" method="post" enctype="multipart/form-data">
     @csrf

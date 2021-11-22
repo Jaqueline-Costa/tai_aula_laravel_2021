@@ -34,7 +34,7 @@ if(!empty(Request::route('id'))){
 }
 @endphp
 
-<h4 style="margin: 20px 0 40px 0 ">Forlmulário de Cliente</h4>
+<h4 style="margin: 20px 0 40px 0 ">Formulário de Clientes</h4>
 
 <form action="{{$action}}" method="post">
     @csrf
